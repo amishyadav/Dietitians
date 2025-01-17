@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PricingPlanController;
+use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +17,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+// Frontend Routes
 Route::get('/', [HomeController::class,'home'])->name('home');
+
+
+// Backend Routes
+Route::group(['prefix'=>'admin','middleware' => ['web']], function () {
+    Route::get('/dashboard', [DashboardController::class,'dashboard'])->name('dashboard.index');
+
+    // Subscriptions
+    Route::get('/subscriptions', [SubscriptionController::class,'index'])->name('subscription.index');
+
+    // Pricing Plans
+    Route::resource('pricing-plans', PricingPlanController::class);
+});
