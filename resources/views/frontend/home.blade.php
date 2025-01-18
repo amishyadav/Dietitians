@@ -7,12 +7,10 @@
 
         <!-- Start Slider
         ============================================= -->
-        <div class="hero-section bg-theme-3">
+        <div class="hero-section">
             <div class="hero-single">
                 <div class="hero-1">
-                    <img src="{{asset('frontend/assets/img/bg/tomato.png') }}" class="up-move" alt="thumb">
-                    <img src="{{asset('frontend/assets/img/header/right.png') }}" class="sec-pic" alt="thumb">
-                    <img src="{{asset('frontend/assets/img/shape/shape.png') }}" class="sec-pic" alt="thumb">
+                    <img src="{{asset('frontend/assets/img/healthy/h2.jpg') }}" class="sec-pic" alt="thumb">
                 </div>
                 <div class="container">
                     <div class="row">
@@ -32,14 +30,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6">
+                        {{--<div class="col-xl-6">
                             <div class="hero-pic">
                                 <div class="hero-dot">
                                     <img src="{{asset('frontend/assets/img/bg/radish.png') }}" class="up-move" alt="thumb">
                                     <img src="{{asset('frontend/assets/img/shape/dot.png') }}" alt="thumb">
                                 </div>
                             </div>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
             </div>

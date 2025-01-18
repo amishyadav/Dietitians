@@ -1,6 +1,6 @@
 <header class="header header-1">
     <div class="main-navigation">
-        <nav id="navbar_top" class="navbar navbar-expand-lg">
+        <nav  class="navbar navbar-expand-lg fixed-top">
             <div class="container order-menu g-0">
                 <a class="navbar-brand" href="../index-2.html">
                     <img src="{{ asset('frontend/assets/img/logo/logo-white.png') }}" class="logo-display" alt="thumb">

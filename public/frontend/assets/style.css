@@ -1,10 +1,3 @@
-/*
-  Theme Name:  Oreg - Organic Shop HTML Template
-  Author: Kazi Sahiduzzman
-  Description: Oreg - Organic Shop HTML Template
-  Version: 1.0
-*/
-/*01*/
 /*-------------------------------------------------------
 01. Variable css   #207200 #667829  #436105
 ---------------------------------------------------------*/
@@ -1048,7 +1041,7 @@ button.navbar-toggler:focus {
   background-repeat: no-repeat; }
 
 .hero-single {
-  height: 100vh;
+  height: 89vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1101,8 +1094,7 @@ button.navbar-toggler:focus {
   position: absolute;
   z-index: -1; }
   .hero-1 img:first-child {
-    left: 5rem;
-    bottom: 10%; }
+    bottom: -10%; }
   .hero-1 img:nth-child(2) {
     right: 0;
     bottom: 0; }
