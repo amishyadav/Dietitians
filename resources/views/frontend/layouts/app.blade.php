@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('frontend/assets/img/logo/favicon.png') }}">
     <!-- ========== Start Stylesheet ========== -->
     <link href="{{asset('frontend/assets/css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{asset('frontend/assets/css/fontawesome.min.css')}}" rel="stylesheet" />
