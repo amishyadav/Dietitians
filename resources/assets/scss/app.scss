@@ -1,7 +1,14 @@
 .add-btn {
   @media (min-width: 400px) {
     position: absolute;
-    right: 20px;
+    right: 36px;
     margin-top: 21px;
+    z-index: 10;
   }
+}
+
+.back-btn {
+  position: absolute;
+  right: 20px;
+  margin-top: -48px;
 }

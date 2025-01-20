@@ -30,14 +30,6 @@
                                 </div>
                             </div>
                         </div>
-                        {{--<div class="col-xl-6">
-                            <div class="hero-pic">
-                                <div class="hero-dot">
-                                    <img src="{{asset('frontend/assets/img/bg/radish.png') }}" class="up-move" alt="thumb">
-                                    <img src="{{asset('frontend/assets/img/shape/dot.png') }}" alt="thumb">
-                                </div>
-                            </div>
-                        </div>--}}
                     </div>
                 </div>
             </div>
