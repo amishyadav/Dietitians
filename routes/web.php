@@ -29,5 +29,5 @@ Route::group(['prefix'=>'admin','middleware' => ['web']], function () {
     Route::get('/subscriptions', [SubscriptionController::class,'index'])->name('subscription.index');
 
     // Pricing Plans
-    Route::resource('pricing-plans', PricingPlanController::class);
+    Route::resource('pricing-plans', PricingPlanController::class)->except('show');
 });

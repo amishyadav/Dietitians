@@ -233,26 +233,19 @@
                     </div>
                 </div>
                 <div class="pricing-wrapper grid-3">
+                    @foreach($pricingPlans as $pricingPlan)
                     <div class="price-box">
-                        <h4 class="price-ribon">Basic</h4>
+                        <h4 class="price-ribon">{{ $pricingPlan->name }}</h4>
                         <div class="price-head">
                             <div class="price-head-content">
                                 <h3>
-                                    <span>$</span>130
+                                    <span>$</span>{{ $pricingPlan->price }}
                                 </h3>
-                                <h6>per month</h6>
+                                <h6>{{ $pricingPlan->duration }}</h6>
                             </div>
                         </div>
                         <div class="price-desc">
-                            <ul>
-                                <li>Business Analyzing</li>
-                                <li>24/7 Tech Suport</li>
-                                <li>Operational Excellence</li>
-                                <li>Knowledge Management</li>
-                                <li>Business Idea Ready</li>
-                                <li>10 Database</li>
-                                <li>Customer Support</li>
-                            </ul>
+                            {!!  $pricingPlan->description  !!}}
                         </div>
                         <div class="price-bottom">
                             <a href="contact.html" target="_blank" class="tm-btn-2">
@@ -261,58 +254,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="price-box">
-                        <h4 class="price-ribon">Standard</h4>
-                        <div class="price-head">
-                            <div class="price-head-content">
-                                <h3><span>$</span>150</h3>
-                                <h6>per month</h6>
-                            </div>
-                        </div>
-                        <div class="price-desc">
-                            <ul>
-                                <li>Full Business Analyzing</li>
-                                <li>24/7 Tech Suport</li>
-                                <li>Next Generation Accounting</li>
-                                <li>Online Staff Training Sessions</li>
-                                <li>Business Idea Ready</li>
-                                <li>20 Database</li>
-                                <li>Customer Support</li>
-                            </ul>
-                        </div>
-                        <div class="price-bottom">
-                            <a href="contact.html" target="_blank" class="tm-btn-2">
-                                Shop Now
-                                <i class="icofont-long-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="price-box">
-                        <h4 class="price-ribon">Premium</h4>
-                        <div class="price-head">
-                            <div class="price-head-content">
-                                <h3><span>$</span>180</h3>
-                                <h6>per month</h6>
-                            </div>
-                        </div>
-                        <div class="price-desc">
-                            <ul>
-                                <li>Digital Transformation</li>
-                                <li>24/7 Tech Suport</li>
-                                <li>Supply Chain Optimization</li>
-                                <li>E-mail support</li>
-                                <li>Business Idea Ready</li>
-                                <li>Unlimited Database</li>
-                                <li>Customer Support</li>
-                            </ul>
-                        </div>
-                        <div class="price-bottom">
-                            <a href="contact.html" target="_blank" class="tm-btn-2">
-                                Shop Now
-                                <i class="icofont-long-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

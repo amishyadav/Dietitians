@@ -14,6 +14,7 @@
     <link href="{{asset('backend/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('backend/assets/css/app.min.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{asset('backend/assets/js/config.min.js')}}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
     @vite('resources/assets/scss/app.scss')
     @yield('css')
 </head>
@@ -45,6 +46,7 @@
 <script src="{{asset('backend/assets/vendor/jsvectormap/maps/world-merc.js')}}"></script>
 <script src="{{asset('backend/assets/vendor/jsvectormap/maps/world.js')}}"></script>
 {{--<script src="{{asset('backend/assets/js/pages/dashboard.js')}}"></script>--}}
+<script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
 @yield('js')
 </body>
 </html>

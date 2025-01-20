@@ -23,6 +23,8 @@
 @section('js')
     <script>
         const pricingPlans = @json($pricingPlans);
+        const editRouteTemplate = "{{ route('pricing-plans.edit', ':id') }}";
+        const destroyRouteTemplate = "{{ route('pricing-plans.destroy', ':id') }}";
         if (document.getElementById("table-gridjs"))
             new gridjs.Grid({
                 columns: [{
@@ -36,13 +38,20 @@
                     {
                         name: 'Actions',
                         width: '120px',
-                        formatter: (function (cell) {
-                            return gridjs.html("<a href='#' class='text-reset text-decoration-underline'>" + "Details" + "</a>");
-                        })
+                        formatter: (_, row) => {
+                            const editUrl = editRouteTemplate.replace(':id', row.cells[0].data);
+                            const destroyUrl = destroyRouteTemplate.replace(':id', row.cells[0].data);
+                            return gridjs.html(
+                                `<div class='d-flex'>
+                            <a href='${editUrl}' class='btn btn-green me-3'>Edit</a>
+                            <a href='${destroyUrl}' class='btn btn-danger me-3'>Delete</a>
+                        </div>`
+                            );
+                        }
                     },
                 ],
                 pagination: {
-                    limit: 5
+                    limit: 15
                 },
                 sort: true,
                 search: true,

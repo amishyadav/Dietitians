@@ -30,10 +30,10 @@ class PricingPlanController extends Controller
         return redirect()->route('pricing-plans.index')->with('success', 'Pricing Plan created successfully.');
     }
 
-    public function show(PricingPlan $pricingPlan)
-    {
-        return view('backend.pricing_plans.show', compact('pricingPlan'));
-    }
+//    public function show(PricingPlan $pricingPlan)
+//    {
+//        return view('backend.pricing_plans.show', compact('pricingPlan'));
+//    }
 
     public function edit(PricingPlan $pricingPlan)
     {
