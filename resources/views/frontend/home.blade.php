@@ -10,21 +10,18 @@
         <div class="hero-section">
             <div class="hero-single">
                 <div class="hero-1">
-                    <img src="{{asset('frontend/assets/img/healthy/h2.jpg') }}" class="sec-pic" alt="thumb">
+                    <img  src="{{asset('frontend/assets/img/healthy/round-veg.jpg') }}" class="object-fit-contain" alt="thumb">
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6">
+                        <div class="col-xl-12">
                             <div class="hero-content">
-                                <h2 class="hero-title">
-                                    Organic And Healthy Food
-                                </h2>
-                                <p>
-                                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae  vel illum qui dolorem eum velit esse quam nihil consequatur qui in ea el eum iure reprehenderit
-                                </p>
-                                <div class="hero-btn">
-                                    <a href="contact.html" target="_blank" class="tm-btn-2">
-                                        Shop Now
+                                <h4 class="main-title text-center">
+                                    Nourish Your Body, Energize Your Life
+                                </h4>
+                                <div class="hero-btn align-self-center">
+                                    <a href="#price" class="tm-btn-2">
+                                        Get Started Now
                                         <i class="icofont-long-arrow-right"></i>
                                     </a>
                                 </div>
@@ -43,48 +40,21 @@
                 <div class="about-wpr grid-2">
                     <div class="about-right">
                         <h2 class="hero-title">
-                            Our goal Is To Provide Best Organic Products.
+                            Who We Are?
                         </h2>
-                        <h3>Add Some Organics to your Diet </h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem reprehenderit, debitis! Earum obcaecati nostrum temporibus cumque suscipit, autem explicabo ducimus vitae quia et dicta pariatur quae unde corporis porro facilis.
+                            Aarogya was founded with a mission to make healthy eating accessible, enjoyable, and effective. Our team of
+                            certified nutritionists and wellness experts combines scientific research with real-world solutions to create diet plans that work for you.
                         </p>
+                        <h3>Our Vision</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem reprehenderit, debitis! Earum obcaecati nostrum temporibus cumque suscipit, autem explicabo ducimus vitae quia et dicta pariatur quae unde corporis porro facilis.
+                            To inspire and empower individuals to lead healthier, happier lives through personalized nutrition.
                         </p>
-                        <ul class="about-list">
-                            <li>
-
-                                <div class="about-opt">
-                                    <img src="{{asset('frontend/assets/img/shape/list-bg.png') }}" class="lst" alt="thumb">
-                                    <img src="{{asset('frontend/assets/img/shape/leaves.png') }}" class="leav" alt="thumb">
-                                    <div class="about-content">
-                                        <h4>100%</h4>
-                                        <span>Organic</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="about-opt">
-                                    <img src="{{asset('frontend/assets/img/shape/list-bg.png') }}" class="lst" alt="thumb">
-                                    <img src="{{asset('frontend/assets/img/shape/leaves.png') }}" class="leav" alt="thumb">
-                                    <div class="about-content">
-                                        <h4>100%</h4>
-                                        <span>Tasty</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="about-opt">
-                                    <img src="{{asset('frontend/assets/img/shape/list-bg.png') }}" class="lst" alt="thumb">
-                                    <img src="{{asset('frontend/assets/img/shape/leaves.png') }}" class="leav" alt="thumb">
-                                    <div class="about-content">
-                                        <h4>100%</h4>
-                                        <span>Fresh</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                        <h3>Our Approach</h3>
+                        <p>
+                            We believe in sustainable, balanced eating habits.
+                            Our plans are designed to fit your lifestyle and help you achieve your goals without compromising on taste or convenience.
+                        </p>
                     </div>
                     <div class="about-left">
                         <div class="row g-3">
@@ -125,10 +95,6 @@
         <!-- Start Counter
         ============================================= -->
         <div class="counter-area de-padding">
-            <img src="{{asset('frontend/assets/img/shape/icon-3.png') }}" class="circle-shape round-move" alt="thumb">
-            <div class="counter-chm">
-                <img src="{{asset('frontend/assets/img/tree/chema3.png') }}" alt="thumb">
-            </div>
             <div class="container">
                 <div class="counter-wpr grid-4 gap-0 counter-1 bg-theme pd-60">
                     <div class="fun-fact">
@@ -182,13 +148,15 @@
                     </div>
                 </div>
                 <div class="choose-right bg-theme">
-                    <div class="choose-up">
-                        <h5 class="hero-sub-title">Why Choose Us?</h5>
-                        <h2>
-                            We do not buy from the open market & traders.
+                    <div class="text-white">
+                        <h2 class="text-white">
+                            What Makes Us Your Perfect Partner for a Healthier Life.
                         </h2>
-                        <p class="mb-0">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quas nemo, quis ducimus, repellat quos! consectetur adipisicing elit. Aspernatur quas nemo, quis.Lorem ipsum dolor sit amet, consectetur
+                        <p class="my-5">
+                            At Aarogya, we go beyond meal plans to deliver a personalized, expert-backed approach to
+                            nutrition that fits your unique lifestyle. With a focus on sustainable results, comprehensive support,
+                            and inclusive options for all dietary preferences, we’re committed to helping you achieve your health
+                            goals with ease and confidence.
                         </p>
                     </div>
                     <div class="choose-feature grid-2">
@@ -232,7 +200,7 @@
 
         <!-- Start Partner
         ============================================= -->
-        <div class="partner-area mb-100">
+        <div class="mb-100 mt-100">
             <div class="container">
                 <div class="partner-wpr partner-sldr owl-carousel owl-theme">
                     <img src="{{asset('frontend/assets/img/partner/client-1.png') }}" alt="thumb">
@@ -252,16 +220,14 @@
         <!-- Start Pricing
     ============================================= -->
         <div id="price" class="pricing-area bg-theme pos-rel de-padding mb-100">
-            <div class="price-tree">
-                <img src="{{asset('frontend/assets/img/tree/4.png') }}" alt="thumb">
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 offset-xl-2">
                         <div class="site-title wh text-center">
-                            <h2>Pricing Table</h2>
+                            <h2>Find Your Fit</h2>
                             <p class="mb-0">
-                                Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
+                                Choose from our flexible plans tailored to fit your lifestyle and budget.
+                                Whether you're looking for simple guidance or full support, we have the right solution to help you achieve lasting results.
                             </p>
                         </div>
                     </div>

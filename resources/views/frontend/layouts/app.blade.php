@@ -21,6 +21,7 @@
     <link href="{{asset('frontend/assets/css/site-flaticon.css')}}" rel="stylesheet" />
     <link href="{{asset('frontend/assets/style.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/assets/css/responsive.css')}}" rel="stylesheet" />
+    @vite('resources/assets/scss/app.scss')
     <!-- ========== End Stylesheet ========== -->
 </head>
 
