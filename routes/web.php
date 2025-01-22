@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PricingPlanController;
@@ -30,4 +31,11 @@ Route::group(['prefix'=>'admin','middleware' => ['web']], function () {
 
     // Pricing Plans
     Route::resource('pricing-plans', PricingPlanController::class)->except('show');
+    Route::get('pricing-plans/{pricingPlan}/delete',[PricingPlanController::class,'destroy'])->name('pricing-plans.destroy');
+
+    //Blogs
+    Route::resource('blogs', BlogController::class);
+
+    Route::get('/youtube', [PricingPlanController::class,'youtube'])->name('subscription.index');
+
 });

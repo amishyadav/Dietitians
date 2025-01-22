@@ -57,4 +57,9 @@ class PricingPlanController extends Controller
         $pricingPlan->delete();
         return redirect()->route('pricing-plans.index')->with('success', 'Pricing Plan deleted successfully.');
     }
+
+    public function youtube()
+    {
+        return view('backend.pricing_plans.youtube');
+    }
 }

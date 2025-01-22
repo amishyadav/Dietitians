@@ -239,7 +239,7 @@
                         <div class="price-head">
                             <div class="price-head-content">
                                 <h3>
-                                    <span>$</span>{{ $pricingPlan->price }}
+                                    <span class="bx-font-size">₹</span>{{ $pricingPlan->price }}
                                 </h3>
                                 <h6>{{ $pricingPlan->duration }}</h6>
                             </div>
@@ -349,5 +349,158 @@
             </div>
         </div>
         <!-- End Review -->
+
+        <!-- Start Blog
+============================================= -->
+        <div class="blog-area bg-theme de-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2">
+                        <div class="site-title wh text-center">
+                            <h2>Latest News</h2>
+                            <p class="mb-0">
+                                Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-wpr grid-3">
+                    <div class="blog-box">
+                        <div class="blog-pic">
+                            <img src="assets/img/blog/1.jpg" alt="thumb">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+
+                                            <i class="icofont-user-alt-4"></i>
+                                            Admin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-heart"></i>
+                                            33 likes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-comment"></i>
+                                            37 Comments
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="blog-desc">
+                                <a href="single.html">
+                                    <h4>
+                                        departure ourselves very as he peculiar believed
+                                    </h4>
+                                </a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsum perspiciatis, reiciendis.
+                                </p>
+                                <div class="price-bottom">
+                                    <a href="single.html" class="btn-4">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <div class="blog-pic">
+                            <img src="assets/img/blog/2.jpg" alt="thumb">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-user-alt-4"></i>
+                                            Admin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-heart"></i>
+                                            33 likes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-comment"></i>
+                                            37 Comments
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="blog-desc">
+                                <a href="single.html">
+                                    <h4>
+                                        departure ourselves very as he peculiar believed
+                                    </h4>
+                                </a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsum perspiciatis, reiciendis.
+                                </p>
+                                <div class="price-bottom">
+                                    <a href="single.html" class="btn-4">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <div class="blog-pic">
+                            <img src="assets/img/blog/3.jpg" alt="thumb">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-user-alt-4"></i>
+                                            Admin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-heart"></i>
+                                            33 likes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-comment"></i>
+                                            37 Comments
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="blog-desc">
+                                <a href="single.html">
+                                    <h4>
+                                        departure ourselves very as he peculiar believed
+                                    </h4>
+                                </a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsum perspiciatis, reiciendis.
+                                </p>
+                                <div class="price-bottom">
+                                    <a href="single.html" class="btn-4">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Blog -->
     </main>
 @endsection

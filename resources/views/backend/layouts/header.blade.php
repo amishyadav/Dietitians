@@ -9,12 +9,20 @@
                         <iconify-icon icon="solar:hamburger-menu-broken" class="fs-24 align-middle"></iconify-icon>
                     </button>
                 </div>
-
+                @if(Request::is('admin/pricing-plans*'))
+                    <div class="app-search d-none d-md-block me-auto">
+                        <div class="position-relative">
+                            <button class="btn btn-secondary"> Pricing plans</button>
+                        </div>
+                    </div>
+                @endif
+                @if(Request::is('admin/blogs*'))
                 <div class="app-search d-none d-md-block me-auto">
                     <div class="position-relative">
-                        <button class="btn btn-secondary"> Pricing plans</button>
+                        <button class="btn btn-secondary"> Blogs</button>
                     </div>
                 </div>
+                @endif
             </div>
 
             <div class="d-flex align-items-center gap-1">
