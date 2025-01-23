@@ -35,6 +35,8 @@ Route::group(['prefix'=>'admin','middleware' => ['web']], function () {
 
     //Blogs
     Route::resource('blogs', BlogController::class);
+    Route::get('blogs/{blog}/delete',[BlogController::class,'destroy'])->name('blogs.destroy');
+
 
     Route::get('/youtube', [PricingPlanController::class,'youtube'])->name('subscription.index');
 

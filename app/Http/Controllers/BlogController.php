@@ -20,14 +20,22 @@ class BlogController extends Controller
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
+        $request->validate([
             'title' => 'required|string|max:255',
-            'content' => 'required|string',
+            'description' => 'required|string',
             'author' => 'required|string|max:255',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+        $imagePath = $request->file('image') ? $request->file('image')->store('images', 'public') : null;
+
+        Blog::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'author' => $request->author,
+            'image' => $imagePath,
         ]);
 
-        Blog::create($validatedData);
-        return redirect()->route('backend.blogs.index')->with('success', 'Pricing Plan created successfully.');
+        return redirect()->route('blogs.index')->with('success', 'Pricing Plan created successfully.');
     }
 
     public function show(Blog $blog)
@@ -44,7 +52,7 @@ class BlogController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|string|max:255',
-            'content' => 'required|string',
+            'description' => 'required|string',
             'author' => 'required|string|max:255',
         ]);
 

@@ -34,7 +34,28 @@
                     })
                 },
                     "Title",
-                    "Content", "Author",
+                    {
+                        name: "Content",
+                        formatter: (cell) => {
+                            const maxLength = 50; // Set the maximum length for content
+                            return cell.length > maxLength
+                                ? gridjs.html(`<span title="${cell}">${cell.substring(0, maxLength)}...</span>`)
+                                : cell;
+                        }
+                    },
+                    "Author",
+                    {
+                        name: 'Image',
+                        width: '120px',
+                        formatter: (_, row) => {
+                            console.log(row,'row')
+{{--                            return gridjs.html(--}}
+{{--                                `--}}
+{{--<img  src='${{asset('storage/' . row.cells[0].data)}} alt="{{ $blog->title }}" width="300">--}}
+{{--`--}}
+{{--                            );--}}
+                        }
+                    },
                     {
                         name: 'Actions',
                         width: '120px',
@@ -58,8 +79,9 @@
                 data: blogs.map(blog => [
                     blog.id,
                     blog.title,
-                    blog.content,
-                    blog.author
+                    blog.description,
+                    blog.author,
+                    blog.image
                 ])
             }).render(document.getElementById("table-gridjs"));
     </script>

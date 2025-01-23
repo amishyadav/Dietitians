@@ -365,42 +365,44 @@
                     </div>
                 </div>
                 <div class="blog-wpr grid-3">
+                    @foreach($blogs as $blog)
                     <div class="blog-box">
                         <div class="blog-pic">
-                            <img src="assets/img/blog/1.jpg" alt="thumb">
+                            @if ($blog->image)
+                                <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" width="300">
+                            @endif
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <ul>
                                     <li>
                                         <a href="#">
-
                                             <i class="icofont-user-alt-4"></i>
-                                            Admin
+                                            {{ $blog->author }}
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icofont-heart"></i>
-                                            33 likes
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icofont-comment"></i>
-                                            37 Comments
-                                        </a>
-                                    </li>
+{{--                                    <li>--}}
+{{--                                        <a href="#">--}}
+{{--                                            <i class="icofont-heart"></i>--}}
+{{--                                            33 likes--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#">--}}
+{{--                                            <i class="icofont-comment"></i>--}}
+{{--                                            37 Comments--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
                                 </ul>
                             </div>
                             <div class="blog-desc">
                                 <a href="single.html">
                                     <h4>
-                                        departure ourselves very as he peculiar believed
+                                        {{ $blog->title }}
                                     </h4>
                                 </a>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsum perspiciatis, reiciendis.
+                                    {!! $blog->description !!}
                                 </p>
                                 <div class="price-bottom">
                                     <a href="single.html" class="btn-4">
@@ -410,94 +412,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog-box">
-                        <div class="blog-pic">
-                            <img src="assets/img/blog/2.jpg" alt="thumb">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icofont-user-alt-4"></i>
-                                            Admin
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icofont-heart"></i>
-                                            33 likes
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icofont-comment"></i>
-                                            37 Comments
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="blog-desc">
-                                <a href="single.html">
-                                    <h4>
-                                        departure ourselves very as he peculiar believed
-                                    </h4>
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsum perspiciatis, reiciendis.
-                                </p>
-                                <div class="price-bottom">
-                                    <a href="single.html" class="btn-4">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-box">
-                        <div class="blog-pic">
-                            <img src="assets/img/blog/3.jpg" alt="thumb">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icofont-user-alt-4"></i>
-                                            Admin
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icofont-heart"></i>
-                                            33 likes
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icofont-comment"></i>
-                                            37 Comments
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="blog-desc">
-                                <a href="single.html">
-                                    <h4>
-                                        departure ourselves very as he peculiar believed
-                                    </h4>
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsum perspiciatis, reiciendis.
-                                </p>
-                                <div class="price-bottom">
-                                    <a href="single.html" class="btn-4">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
