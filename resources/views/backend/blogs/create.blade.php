@@ -17,7 +17,7 @@
                                 <label for="title" class="form-label">Title:</label>
                                 <input type="text" id="title" name="title" class="form-control">
                             </div>
-
+                        </div>
                         <div class="row">
                         <div class="mb-3 col-6">
                             <label for="author" class="form-label">Author:</label>

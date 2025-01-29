@@ -45,19 +45,30 @@ class BlogController extends Controller
 
     public function edit(Blog $blog)
     {
-        // Return a view for editing a blog post if needed
+        return view('backend.blogs.edit', compact('blog'));
     }
 
     public function update(Request $request, Blog $blog)
     {
-        $validatedData = $request->validate([
+//        dd($request->all());
+        $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string',
             'author' => 'required|string|max:255',
         ]);
 
-        $blog->update($validatedData);
-        return response()->json($blog);
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('images', 'public');
+            $blog->update(['image' => $imagePath]);
+        }
+
+        $blog->update([
+            'title' => $request->title,
+            'description' => $request->description,
+            'author' => $request->author
+        ]);
+
+        return redirect()->route('blogs.index')->with('success', 'Blog updated successfully.');
     }
 
     public function destroy(Blog $blog)

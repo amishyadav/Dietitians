@@ -1,40 +1,45 @@
 @extends('backend.layouts.app')
 @section('title')
-    Pricing Plans Edit
+    Blog Edit
 @endsection
 @section('content')
     <div class="row">
         <div class="col-xl-12">
             <h3>Edit Plan</h3>
-            <a href="{{ route('pricing-plans.index') }}">
+            <a href="{{ route('blogs.index') }}">
             <button class="btn btn-green back-btn">Back</button></a>
             <div class="card">
                 <div class="card-body">
-                    <form action="{{ route('pricing-plans.update',$pricingPlan->id) }}" method="post">
+                    <form action="{{ route('blogs.update',$blog->id) }}" method="post" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="row">
-                            <div class="mb-3 col-6">
-                                <label for="name" class="form-label">Name:</label>
-                                <input type="text" id="name" name="name" value="{{$pricingPlan->name}}" class="form-control">
-                            </div>
-                            <div class="mb-3 col-6">
-                                <label for="price" class="form-label">Price:</label>
-                                <input type="number" id="price" name="price" value="{{$pricingPlan->price}}" class="form-control">
+                            <div class="mb-3 col-12">
+                                <label for="title" class="form-label">Title:</label>
+                                <input type="text" id="title" name="title" value="{{$blog->title}}" class="form-control">
                             </div>
                         </div>
-                        <div class="mb-3 col-6">
-                            <label for="duration" class="form-label">Duration:</label>
-                            <input type="text" id="duration" name="duration" value="{{$pricingPlan->duration}}" class="form-control">
+                        <div class="row">
+                            <div class="mb-3 col-6">
+                                <label for="author" class="form-label">Author:</label>
+                                <input type="text" id="author" name="author" value="{{$blog->author}}" class="form-control">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="image" class="form-label">Image:</label>
+                                <div class="d-flex">
+                                <img src="{{ asset('storage/' . $blog->image) }}" width="100">
+                                <input type="file" id="image" name="image" class="form-control">
+                                </div>
+                            </div>
                         </div>
                         <div class="mb-3">
-                            <label for="description" class="form-label">Description:</label>
-                            <div id="editor" style="height: 400px; width: 100%;">{!! $pricingPlan->description !!}</div>
+                            <label for="content" class="form-label">Content:</label>
+                            <div id="editor" style="height: 600px; width: 100%;">{!! $blog->description !!}</div>
                             <input type="hidden" name="description" id="content">
                         </div>
                         <div class="d-flex justify-content-end">
                             <button type="submit" class="btn btn-primary me-3" onclick="submitForm()">Save</button>
-                            <a href="{{ route('pricing-plans.index') }}" class="btn btn-secondary">Cancel</a>
+                            <a href="{{ route('blogs.index') }}" class="btn btn-secondary">Cancel</a>
                         </div>
                     </form>
                 </div>
@@ -47,7 +52,7 @@
         const quill = new Quill('#editor', {
             theme: 'snow',
         });
-        quill.root.innerHTML = `{!! $pricingPlan->description !!}`;
+        quill.root.innerHTML = `{!! $blog->description !!}`;
 
         function submitForm() {
             document.getElementById('content').value = quill.root.innerHTML;
