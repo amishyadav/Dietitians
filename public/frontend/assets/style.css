@@ -1,7 +1,7 @@
 /*-------------------------------------------------------
 01. Variable css   #207200 #667829  #436105
 ---------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&amp;family=Lora:wght@400;500;600;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif+Hentaigana:wght@200..900&family=Smooch+Sans:wght@100..900&family=VT323&display=swap");
 :root {
   --clr-heading: #1a2428;
   --clr-body: #1b1b1b;
@@ -12,8 +12,8 @@
   --clr-menu: #FF4A17;
   --clr-white: #fff;
   --clr-black: #000;
-  --font-1: 'Barlow', sans-serif;
-  --font-2: 'Lora', serif;
+  --font-1: "Josefin Sans", serif;
+  --font-2: "Noto Serif Hentaigana", serif;
   --rad-1: 4px;
   --clr-ftr:#c2d1e2;
   --clr-1:#E3F3FF;
