@@ -50,7 +50,6 @@ class BlogController extends Controller
 
     public function update(Request $request, Blog $blog)
     {
-//        dd($request->all());
         $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string',

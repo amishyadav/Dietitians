@@ -2,36 +2,59 @@
 @section('title')
     Home
 @endsection
+@section('css')
+    <style>
+        .slider-container {
+            position: relative;
+            margin-top: 183px; /* Ensure it doesn't overlap with the fixed header */
+            overflow: hidden;
+            background: #ffffff;
+            padding: 20px 0;
+        }
+    </style>
+@endsection
 @section('content')
     <main class="main">
 
         <!-- Start Slider
         ============================================= -->
-        <div class="hero-section">
-            <div class="hero-single">
-                <div class="hero-1">
-                    <img  src="{{asset('frontend/assets/img/healthy/round-veg.jpg') }}" class="object-fit-contain" alt="thumb">
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="hero-content">
-                                <h4 class="main-title text-center">
-                                    Nourish Your Body, Energize Your Life
-                                </h4>
-                                <div class="hero-btn align-self-center">
-                                    <a href="#price" class="tm-btn-2">
-                                        Get Started Now
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--        <div class="hero-section">--}}
+{{--            <div class="hero-single">--}}
+{{--                <div class="hero-1">--}}
+{{--                    <img  src="{{asset('frontend/assets/img/healthy/round-veg.jpg') }}" class="object-fit-contain" alt="thumb">--}}
+{{--                </div>--}}
+{{--                <div class="container">--}}
+{{--                    <div class="row">--}}
+{{--                        <div class="col-xl-12">--}}
+{{--                            <div class="hero-content">--}}
+{{--                                <h4 class="main-title text-center">--}}
+{{--                                    Nourish Your Body, Energize Your Life--}}
+{{--                                </h4>--}}
+{{--                                <div class="hero-btn align-self-center">--}}
+{{--                                    <a href="#price" class="tm-btn-2">--}}
+{{--                                        Get Started Now--}}
+{{--                                        <i class="icofont-long-arrow-right"></i>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <!-- End Slider -->
+
+        <div class="slider-container partner-wpr partner-sldr owl-carousel owl-theme">
+            <img src="{{asset('frontend/assets/img/healthy/round-veg.jpg') }}" alt="thumb">
+{{--            <img src="{{asset('frontend/assets/img/partner/client-2.png') }}" alt="thumb">--}}
+{{--            <img src="{{asset('frontend/assets/img/partner/client-3.png') }}" alt="thumb">--}}
+{{--            <img src="{{asset('frontend/assets/img/partner/client-4.png') }}" alt="thumb">--}}
+{{--            <img src="{{asset('frontend/assets/img/partner/client-5.png') }}" alt="thumb">--}}
+{{--            <img src="{{asset('frontend/assets/img/partner/client-6.png') }}" alt="thumb">--}}
+{{--            <img src="{{asset('frontend/assets/img/partner/client-7.png') }}" alt="thumb">--}}
+{{--            <img src="{{asset('frontend/assets/img/partner/client-8.png') }}" alt="thumb">--}}
+{{--            <img src="{{asset('frontend/assets/img/partner/client-1.png') }}" alt="thumb">--}}
+        </div>
 
         <!-- Start About
         ============================================= -->
@@ -418,4 +441,11 @@
         </div>
         <!-- End Blog -->
     </main>
+@endsection
+@section('js')
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
 @endsection
