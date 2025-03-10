@@ -23,7 +23,7 @@
         <ul class="navbar-nav" id="navbar-nav">
 
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('dashboard.index') }}">
+                <a class="nav-link" href="{{ route('dashboard') }}">
                                    <span class="nav-icon">
                                         <iconify-icon icon="solar:home-2-broken"></iconify-icon>
                                    </span>

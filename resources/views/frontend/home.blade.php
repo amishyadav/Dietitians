@@ -2,59 +2,21 @@
 @section('title')
     Home
 @endsection
-@section('css')
-    <style>
-        .slider-container {
-            position: relative;
-            margin-top: 183px; /* Ensure it doesn't overlap with the fixed header */
-            overflow: hidden;
-            background: #ffffff;
-            padding: 20px 0;
-        }
-    </style>
-@endsection
 @section('content')
     <main class="main">
 
         <!-- Start Slider
         ============================================= -->
-{{--        <div class="hero-section">--}}
-{{--            <div class="hero-single">--}}
-{{--                <div class="hero-1">--}}
-{{--                    <img  src="{{asset('frontend/assets/img/healthy/round-veg.jpg') }}" class="object-fit-contain" alt="thumb">--}}
-{{--                </div>--}}
-{{--                <div class="container">--}}
-{{--                    <div class="row">--}}
-{{--                        <div class="col-xl-12">--}}
-{{--                            <div class="hero-content">--}}
-{{--                                <h4 class="main-title text-center">--}}
-{{--                                    Nourish Your Body, Energize Your Life--}}
-{{--                                </h4>--}}
-{{--                                <div class="hero-btn align-self-center">--}}
-{{--                                    <a href="#price" class="tm-btn-2">--}}
-{{--                                        Get Started Now--}}
-{{--                                        <i class="icofont-long-arrow-right"></i>--}}
-{{--                                    </a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+        <div class="slider-container partner-wpr partner-sldr owl-carousel owl-theme">
+            <img src="{{asset('frontend/assets/img/slider/slider-1.jpg') }}" alt="thumb">
+            <img src="{{asset('frontend/assets/img/slider/slider-2.jpg') }}" alt="thumb">
+            <img src="{{asset('frontend/assets/img/slider/slider-10.jpg') }}" alt="thumb">
+            <img src="{{asset('frontend/assets/img/slider/slider-11.jpg') }}" alt="thumb">
+            <img src="{{asset('frontend/assets/img/slider/slider-12.jpg') }}" alt="thumb">
+            <img src="{{asset('frontend/assets/img/slider/slider-14.jpg') }}" alt="thumb">
+        </div>
         <!-- End Slider -->
 
-        <div class="slider-container partner-wpr partner-sldr owl-carousel owl-theme">
-            <img src="{{asset('frontend/assets/img/healthy/round-veg.jpg') }}" alt="thumb">
-{{--            <img src="{{asset('frontend/assets/img/partner/client-2.png') }}" alt="thumb">--}}
-{{--            <img src="{{asset('frontend/assets/img/partner/client-3.png') }}" alt="thumb">--}}
-{{--            <img src="{{asset('frontend/assets/img/partner/client-4.png') }}" alt="thumb">--}}
-{{--            <img src="{{asset('frontend/assets/img/partner/client-5.png') }}" alt="thumb">--}}
-{{--            <img src="{{asset('frontend/assets/img/partner/client-6.png') }}" alt="thumb">--}}
-{{--            <img src="{{asset('frontend/assets/img/partner/client-7.png') }}" alt="thumb">--}}
-{{--            <img src="{{asset('frontend/assets/img/partner/client-8.png') }}" alt="thumb">--}}
-{{--            <img src="{{asset('frontend/assets/img/partner/client-1.png') }}" alt="thumb">--}}
-        </div>
 
         <!-- Start About
         ============================================= -->
@@ -126,7 +88,7 @@
                         </div>
                         <div class="fun-desc">
                             <p class="timer" data-count="+" data-to="200" data-speed="3000">120</p>
-                            <span class="medium">Activate Products</span>
+                            <span class="medium">Personalized Diet Plans Delivered</span>
                         </div>
                     </div>
                     <div class="fun-fact">
@@ -135,7 +97,7 @@
                         </div>
                         <div class="fun-desc">
                             <p class="timer" data-count="+" data-to="150" data-speed="3000">950</p>
-                            <span class="medium">Per Day Visitors</span>
+                            <span class="medium">Active Users</span>
                         </div>
                     </div>
                     <div class="fun-fact">
@@ -144,7 +106,7 @@
                         </div>
                         <div class="fun-desc">
                             <p class="timer" data-count="+" data-to="630" data-speed="3000">630</p>
-                            <span class="medium">Satisfied Clients</span>
+                            <span class="medium">Happy & Satisfied Customers</span>
                         </div>
                     </div>
                     <div class="fun-fact">
@@ -153,7 +115,7 @@
                         </div>
                         <div class="fun-desc">
                             <p class="timer" data-count="+" data-to="10" data-speed="3000">10</p>
-                            <span class="medium">Award Winning</span>
+                            <span class="medium">Years of Expertise in Nutrition</span>
                         </div>
                     </div>
                 </div>
@@ -167,7 +129,7 @@
             <div class="choose-wpr grid-2 gap-0">
                 <div class="choose-left">
                     <div class="choose-left-pic">
-                        <img src="{{asset('frontend/assets/img/choose/choose.jpg') }}" alt="thumb">
+                        <img src="{{asset('frontend/assets/img/healthy/choose.jpg') }}" alt="thumb">
                     </div>
                 </div>
                 <div class="choose-right bg-theme">
@@ -185,26 +147,26 @@
                     <div class="choose-feature grid-2">
                         <div class="choose-box ope-1">
                             <div class="choose-icon">
-                                <i class="icofont-money-bag"></i>
+                                <i class="icofont-list"></i>
                             </div>
                             <div class="choose-desc">
-                                <h5 class="mb-0">Return Policy</h5>
+                                <h5 class="mb-0">Tailored Diet Plans</h5>
                             </div>
                         </div>
                         <div class="choose-box">
                             <div class="choose-icon">
-                                <i class="icofont-ssl-security"></i>
+                                <i class="icofont-leaf"></i>
                             </div>
                             <div class="choose-desc">
-                                <h5 class="mb-0">Secured Payment</h5>
+                                <h5 class="mb-0">Natural & Balanced Nutrition</h5>
                             </div>
                         </div>
                         <div class="choose-box">
                             <div class="choose-icon">
-                                <i class="icofont-delivery-time"></i>
+                                <i class="icofont-chart-growth"></i>
                             </div>
                             <div class="choose-desc">
-                                <h5 class="mb-0">On Time Delivery</h5>
+                                <h5 class="mb-0">Proven Results</h5>
                             </div>
                         </div>
                         <div class="choose-box ope-1">
@@ -212,7 +174,7 @@
                                 <i class="icofont-live-support"></i>
                             </div>
                             <div class="choose-desc">
-                                <h5 class="mb-0">Support 24/7</h5>
+                                <h5 class="mb-0">24/7 Expert Nutritionist Support</h5>
                             </div>
                         </div>
                     </div>
@@ -443,9 +405,9 @@
     </main>
 @endsection
 @section('js')
-    <script>
-        $('.carousel').carousel({
-            interval: 2000
-        })
-    </script>
+{{--    <script>--}}
+{{--        $('.carousel').carousel({--}}
+{{--            interval: 2000--}}
+{{--        })--}}
+{{--    </script>--}}
 @endsection

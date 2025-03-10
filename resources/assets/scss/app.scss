@@ -20,3 +20,31 @@
   margin-bottom: 3rem;
   font-weight: 900;
 }
+
+.slider-container {
+  position: relative;
+  margin-top: 183px; /* Ensure it doesn't overlap with the fixed header */
+  overflow: hidden;
+  background: #ffffff;
+  padding: 20px 0;
+
+  img{
+    height: 500px !important;
+    max-height: 500px !important;
+  }
+
+  .owl-stage-outer .owl-stage {
+    width: 13000px !important;
+
+    .owl-item {
+      width: 700px !important;
+      object-fit: cover !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .de-padding {
+    padding: 12rem 0 !important;
+  }
+}

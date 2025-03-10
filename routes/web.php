@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
@@ -24,7 +25,19 @@ Route::get('/', [HomeController::class,'home'])->name('home');
 
 // Backend Routes
 Route::group(['prefix'=>'admin','middleware' => ['web']], function () {
-    Route::get('/dashboard', [DashboardController::class,'dashboard'])->name('dashboard.index');
+    // Signup Routes
+    Route::get('/signup', [AuthController::class, 'showSignupForm'])->name('signup');
+    Route::post('/signup', [AuthController::class, 'signup']);
+
+    // Login Routes
+    Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+    Route::post('/login', [AuthController::class, 'login']);
+
+    // Logout Route
+    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+    // Dashboard
+    Route::get('/dashboard', [DashboardController::class,'dashboard'])->name('dashboard');
 
     // Subscriptions
     Route::get('/subscriptions', [SubscriptionController::class,'index'])->name('subscription.index');
