@@ -75,4 +75,10 @@ class BlogController extends Controller
         $blog->delete();
         return response()->json(['message' => 'Blog deleted successfully']);
     }
+
+    public function details($title, $blogId) {
+        $blog = Blog::findOrFail($blogId);
+        // Pass the blog data to the view
+        return view('frontend.blog-details', compact('blog'));
+    }
 }

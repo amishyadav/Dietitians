@@ -62,4 +62,17 @@ class PricingPlanController extends Controller
     {
         return view('backend.pricing_plans.youtube');
     }
+
+    public function redirectToWhatsApp($planName)
+    {
+        $plan = PricingPlan::where('name', $planName)->get()[0]->toArray();
+
+        $phone = '919876543210';
+        $message = urlencode("Hello, I’m interested in your {$plan['duration']} {$plan['name']} and would love to learn more 
+        about its features and benefits. Could you please provide me with more details?");
+
+        $whatsappUrl = "https://wa.me/{$phone}?text={$message}";
+
+        return redirect()->away($whatsappUrl);
+    }
 }

@@ -230,10 +230,10 @@
                             </div>
                         </div>
                         <div class="price-desc">
-                            {!!  $pricingPlan->description  !!}}
+                            {!!  $pricingPlan->description  !!}
                         </div>
                         <div class="price-bottom">
-                            <a href="contact.html" target="_blank" class="tm-btn-2">
+                            <a href="{{ route('pricing-plans.redirect-whatsapp',$pricingPlan->name) }}" target="_blank" class="tm-btn-2">
                                 Shop Now
                                 <i class="icofont-long-arrow-right"></i>
                             </a>
@@ -366,18 +366,6 @@
                                             {{ $blog->author }}
                                         </a>
                                     </li>
-{{--                                    <li>--}}
-{{--                                        <a href="#">--}}
-{{--                                            <i class="icofont-heart"></i>--}}
-{{--                                            33 likes--}}
-{{--                                        </a>--}}
-{{--                                    </li>--}}
-{{--                                    <li>--}}
-{{--                                        <a href="#">--}}
-{{--                                            <i class="icofont-comment"></i>--}}
-{{--                                            37 Comments--}}
-{{--                                        </a>--}}
-{{--                                    </li>--}}
                                 </ul>
                             </div>
                             <div class="blog-desc">
@@ -390,7 +378,7 @@
                                     {!! $blog->description !!}
                                 </p>
                                 <div class="price-bottom">
-                                    <a href="single.html" class="btn-4">
+                                    <a href="{{ route('blogs.details',['title' => $blog->title, 'blog' => $blog]) }}" class="btn-4">
                                         Read More
                                     </a>
                                 </div>
