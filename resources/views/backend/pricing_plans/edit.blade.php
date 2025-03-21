@@ -29,7 +29,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label">Description:</label>
-                            <div id="editor" style="height: 400px; width: 100%;">{!! $pricingPlan->description !!}</div>
+                            <div id="editor-snow" style="height: 400px; width: 100%;">{!! $pricingPlan->description !!}</div>
                             <input type="hidden" name="description" id="content">
                         </div>
                         <div class="d-flex justify-content-end">

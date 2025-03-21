@@ -48,3 +48,25 @@
     padding: 12rem 0 !important;
   }
 }
+
+.rev-content {
+  background: #ffffff;
+  border: 1px solid #1a5238;
+  .rev-desc {
+    blockquote {
+      color: black;
+    }
+  }
+}
+
+.rev-content {
+  .rev-desc {
+    .rev-bio {
+      .rev-txt {
+          h4, span {
+            color: #0c0c0c;
+          }
+      }
+    }
+  }
+}

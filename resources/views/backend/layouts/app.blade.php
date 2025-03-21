@@ -47,6 +47,8 @@
 <script src="{{asset('backend/assets/vendor/jsvectormap/maps/world.js')}}"></script>
 {{--<script src="{{asset('backend/assets/js/pages/dashboard.js')}}"></script>--}}
 <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+{{--@vite('resources/assets/js/app.js')--}}
+@vite(['resources/js/app.js'])
 @yield('js')
 </body>
 </html>

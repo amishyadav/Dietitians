@@ -34,7 +34,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="content" class="form-label">Content:</label>
-                            <div id="editor" style="height: 600px; width: 100%;">{!! $blog->description !!}</div>
+                            <div id="editor-snow" style="height: 600px; width: 100%;">{!! $blog->description !!}</div>
                             <input type="hidden" name="description" id="content">
                         </div>
                         <div class="d-flex justify-content-end">

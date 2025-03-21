@@ -245,18 +245,12 @@
         </div>
         <!-- End Pricing-->
 
-        <!-- Start Countdown
-        ============================================= -->
-
-        <!-- End Countdown -->
-
         <!-- Start Review
         ============================================= -->
-        <div class="rev-area de-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 offset-xl-2">
-                        <div class="site-title wh text-center">
+                        <div class="site-title text-center">
                             <h2>Client Feedback</h2>
                             <p class="mb-0">
                                 Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
@@ -332,7 +326,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+
         <!-- End Review -->
 
         <!-- Start Blog
@@ -391,11 +385,4 @@
         </div>
         <!-- End Blog -->
     </main>
-@endsection
-@section('js')
-{{--    <script>--}}
-{{--        $('.carousel').carousel({--}}
-{{--            interval: 2000--}}
-{{--        })--}}
-{{--    </script>--}}
 @endsection
