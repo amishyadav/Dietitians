@@ -25,6 +25,7 @@
         const blogs = @json($blogs);
         const editRouteTemplate = "{{ route('blogs.edit', ':id') }}";
         const destroyRouteTemplate = "{{ route('blogs.destroy', ':id') }}";
+        const imageTemplate = "{{ asset('storage/' . ':id') }}";
         if (document.getElementById("table-gridjs"))
             new gridjs.Grid({
                 columns: [{
@@ -40,7 +41,7 @@
                             const maxLength = 50; // Set the maximum length for content
                             return cell.length > maxLength
                                 ? gridjs.html(`<span title="${cell}">${cell.substring(0, maxLength)}...</span>`)
-                                : cell;
+                                : cell.substring(0, 50);
                         }
                     },
                     "Author",
@@ -48,12 +49,9 @@
                         name: 'Image',
                         width: '120px',
                         formatter: (_, row) => {
-                            console.log(row,'row')
-{{--                            return gridjs.html(--}}
-{{--                                `--}}
-{{--<img  src='${{asset('storage/' . row.cells[0].data)}} alt="{{ $blog->title }}" width="300">--}}
-{{--`--}}
-{{--                            );--}}
+                            const imageUrl = imageTemplate.replace(':id', row.cells[4].data);
+
+                            return gridjs.html(`<img src="${imageUrl}" class='small-rounded-img'>`);
                         }
                     },
                     {

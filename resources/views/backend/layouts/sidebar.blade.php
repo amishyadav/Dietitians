@@ -2,12 +2,7 @@
 <div class="main-nav">
     <!-- Sidebar Logo -->
     <div class="logo-box">
-        <a href="index.html" class="logo-dark">
-            <img src="{{asset('backend/assets/images/logo-sm.png')}}" class="logo-sm" alt="logo sm">
-            <img src="{{asset('backend/assets/images/logo-dark.png')}}" class="logo-lg" alt="logo dark">
-        </a>
-
-        <a href="index.html" class="logo-light">
+        <a href="{{route('dashboard')}}" class="logo-light">
             <img src="{{asset('backend/assets/images/logo-sm.png')}}" class="logo-sm" alt="logo sm">
             <img src="{{asset('backend/assets/images/logo-light.png')}}" class="logo-lg" alt="logo light">
         </a>

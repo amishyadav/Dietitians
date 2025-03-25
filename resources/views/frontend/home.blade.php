@@ -362,11 +362,11 @@
                             <div class="blog-desc">
                                 <a href="single.html">
                                     <h4>
-                                        {{ $blog->title }}
+                                        {{ Str::limit($blog->title, 50, '...') }}
                                     </h4>
                                 </a>
                                 <p>
-                                    {!! $blog->description !!}
+                                    {!! Str::limit($blog->description, 250, '...') !!}
                                 </p>
                                 <div class="price-bottom">
                                     <a href="{{ route('blogs.details',['title' => $blog->title, 'blog' => $blog]) }}" class="btn-4">
