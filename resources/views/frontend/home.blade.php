@@ -253,9 +253,7 @@
                         <div class="site-title text-center">
                             <h2>Client Feedback</h2>
                             <p class="mb-0">
-                                Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
-                            </p>
-                        </div>
+                                See how our personalized diet plans helped thousands achieve weight loss, muscle gain, and better health. Start your journey today!                      </div>
                     </div>
                 </div>
                 <div class="rev-wpr">
@@ -338,8 +336,7 @@
                         <div class="site-title wh text-center">
                             <h2>Latest News</h2>
                             <p class="mb-0">
-                                Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
-                            </p>
+                                Explore expert diet tips, healthy recipes, and nutrition advice to achieve your fitness goals. Stay informed, stay healthy!                            </p>
                         </div>
                     </div>
                 </div>

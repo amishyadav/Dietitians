@@ -34,7 +34,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('pricing-plans.index') }}">
                                    <span class="nav-icon">
-                                        <iconify-icon icon="solar:chat-round-call-broken"></iconify-icon>
+                                        <iconify-icon icon="solar:dollar-broken"></iconify-icon>
                                    </span>
                     <span class="nav-text"> Pricing Plans </span>
                 </a>
@@ -43,7 +43,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('blogs.index') }}">
                                    <span class="nav-icon">
-                                        <iconify-icon icon="solar:blog"></iconify-icon>
+                                        <iconify-icon icon="solar:pen-2-bold"></iconify-icon>
                                    </span>
                     <span class="nav-text"> Blogs </span>
                 </a>

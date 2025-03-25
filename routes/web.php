@@ -22,7 +22,8 @@ use Illuminate\Support\Facades\Route;
 // Frontend Routes
 Route::get('/', [HomeController::class,'home'])->name('home');
 Route::get('pricing-plans/redirect-to-whatsapp/{pricingPlan}',[PricingPlanController::class,'redirectToWhatsApp'])->name('pricing-plans.redirect-whatsapp');
-Route::get('blogs/{title}/{blog}',[BlogController::class,'details'])->name('blogs.details');
+Route::get('blogs', [HomeController::class,'blog'])->name('blog');
+Route::get('blogs/{title}/{blog}',[HomeController::class,'details'])->name('blogs.details');
 
 // Backend Routes
 Route::group(['prefix'=>'admin','middleware' => ['web']], function () {

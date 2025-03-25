@@ -1,70 +1,159 @@
 @extends('frontend.layouts.app')
 @section('title')
-    Blogs
+    Blog Details
 @endsection
 @section('content')
-
-    <!-- Start Breadcrumb
-		============================================= -->
-    <div class="site-breadcrumb de-padding mt-100">
-        <div class="container">
-            <h2 class="breadcrumb-title">Blog Details</h2>
-            <ul class="breadcrumb-menu clearfix">
-                <li><a href="{{route('home')}}">Home</a></li>
-                <li class="active">Blog Details</li>
-            </ul>
+        <!-- Start Breadcrumb
+        ============================================= -->
+        <div class="site-breadcrumb">
+            <div class="container">
+                <h2 class="breadcrumb-title">Blog Details</h2>
+                <ul class="breadcrumb-menu clearfix">
+                    <li><a href="{{route('home')}}">Home</a></li>
+                    <li class="active">Blog Details</li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <!-- End Breadcrumb -->
+        <!-- End Breadcrumb -->
 
-
-    <!-- Start Blog
-    ============================================= -->
-    <div class="blog-area bg pos-rel">
-        <div class="container">
-            <div class="row ps g-5">
-                <div class="col-xl-10">
-                    <div class="blog-page-wpr">
-                        <div class="blog-page-single">
-                            <div class="blog-pic">
-                                @if ($blog->image)
-                                    <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" >
-                                @endif
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-page-up">
-                                    <h3 class="blog-page-title mb-30">
-                                        Family months lasted simple set nature vulgar him accusantium
-                                    </h3>
-                                    <div class="blog-user mb-30">
-                                        <div class="blog-user-info">
-                                            <img src="{{asset('frontend/assets/img/single/user-1-s.png') }}" alt="thumb">
-                                            <div class="blog-user-bio">
-                                                <h4>Christian Bale</h4>
-                                                <span>Admin</span>
-                                            </div>
+        <!-- Start Blog Single
+		============================================= -->
+        <div class="blog-single-area bg pt-50 pb-50">
+            <div class="container">
+                <div class="blog-single-wpr">
+                    <div class="row ps g-5">
+                        <div class="col-xl-12">
+                            <div class="theme-single blog-single">
+                                <div class="theme-pic">
+                                    @if ($blog->image)
+                                        <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}">
+                                    @endif
+                                </div>
+                                <div class="theme-info">
+                                    <div class="theme-meta">
+                                        <div class="theme-meta-left">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-user"></i>
+                                                    <a href="#">{{ $blog->author }}</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-comments"></i>
+                                                    10 comments
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <ul class="blog-mta">
-                                            <li><i class="fas fa-calendar-alt"></i>30 may 2018</li>
-                                            <li><i class="fas fa-comments"></i>23</li>
-                                            <li><i class="fas fa-thumbs-up"></i>25</li>
-                                        </ul>
+                                        <div class="theme-meta-right">
+                                            <a href="#" class="shr-btn">
+                                                <i class="icofont-share-alt"></i>
+                                                Share
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="theme-desc">
+                                        <h2 class="about-title">
+                                            {{ $blog->title }}
+                                        </h2>
+                                        <p class="mb-30">
+                                            {!! $blog->description !!}
+                                        </p>
+
+                                        <div class="content-tags">
+                                            <h5 class="mb-0">Tags</h5>
+                                            <ul>
+                                                <li><a href="#" class="tags-link">Theme</a></li>
+                                                <li><a href="#" class="tags-link">Business</a></li>
+                                                <li><a href="#" class="tags-link">consult</a></li>
+                                                <li><a href="#" class="tags-link">Organic</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="blog-text">
-                                    <p class="mb-0">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur voluptates quasi accusantium minima magni officia dolores possimus in dolorum deserunt quas, qui culpa, praesentium, saepe iste debitis exercitationem! Ipsa!
-                                    </p>
-                                </div>
-                                <div class="red-more mt-30">
-                                    <a href="single.html" class="btn-4">Read More</a>
-                                </div>
                             </div>
+{{--                            <div class="single-comments-section blg-single">--}}
+{{--                                <h4 class="single-content-title">Comments</h4>--}}
+{{--                                <div class="single-commentor">--}}
+{{--                                    <ul>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="single-commentor-user">--}}
+{{--                                                <img src="assets/img/single/user-1.png" alt="thumb">--}}
+{{--                                                <div class="single-commentor-user-bio">--}}
+{{--                                                    <div class="single-commentor-user-bio-head">--}}
+{{--                                                        <h5> Andrew R. Huskey </h5>--}}
+{{--                                                    </div>--}}
+{{--                                                    <p>--}}
+{{--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utx gh labore et dolor magna ali Ut enim ad minim veniam, quis nostrud exercitation .--}}
+{{--                                                    </p>--}}
+{{--                                                    <a href="#" class="share d-block">--}}
+{{--                                                        Reply<i class="icofont-reply px-2"></i>--}}
+{{--                                                    </a>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="single-commentor-user de-bpd">--}}
+{{--                                                <img src="assets/img/single/user-3.png" alt="thumb">--}}
+{{--                                                <div class="single-commentor-user-bio">--}}
+{{--                                                    <div class="single-commentor-user-bio-head">--}}
+{{--                                                        <h5>George A. Liu</h5>--}}
+{{--                                                    </div>--}}
+{{--                                                    <p>--}}
+{{--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utx gh labore et dolor magna ali Ut enim ad minim veniam--}}
+{{--                                                    </p>--}}
+{{--                                                    <a href="#" class="share d-block">--}}
+{{--                                                        Reply<i class="icofont-reply px-2"></i>--}}
+{{--                                                    </a>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <div class="single-commentor-user">--}}
+{{--                                                <img src="assets/img/single/user-2.png" alt="thumb">--}}
+{{--                                                <div class="single-commentor-user-bio">--}}
+{{--                                                    <div class="single-commentor-user-bio-head">--}}
+{{--                                                        <h5> Martha M. Muth </h5>--}}
+{{--                                                    </div>--}}
+{{--                                                    <p>--}}
+{{--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utx gh labore et dolor magna ali Ut enim ad minim veniam, quis nostrud exercitation .--}}
+{{--                                                    </p>--}}
+{{--                                                    <a href="#" class="share d-block">--}}
+{{--                                                        Reply<i class="icofont-reply px-2"></i>--}}
+{{--                                                    </a>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
+{{--                                <div class="single-comments-section-form">--}}
+{{--                                    <h4 class="single-content-title">Leave a Reply</h4>--}}
+{{--                                    <form>--}}
+{{--                                        <div class="row g-5">--}}
+{{--                                            <div class="col-md-6">--}}
+{{--                                                <div class="form-group">--}}
+{{--                                                    <input type="text" class="form-control input-style-2" placeholder="Your Name*">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="col-md-6">--}}
+{{--                                                <div class="form-group">--}}
+{{--                                                    <input type="email" class="form-control input-style-2" placeholder="Your Email*">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="col-md-12">--}}
+{{--                                                <div class="form-group">--}}
+{{--                                                    <textarea class="form-control input-style-2" rows="5" placeholder="Your Comment*"></textarea>--}}
+{{--                                                </div>--}}
+{{--                                                <button type="submit" class="btn-6 mt-30">--}}
+{{--                                                    Submit--}}
+{{--                                                </button>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </form>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Blog -->
+        <!-- End Blog Single -->
 @endsection

@@ -14,4 +14,15 @@ class HomeController extends Controller
         $blogs = Blog::all();
         return view('frontend.home', compact('pricingPlans','blogs'));
     }
+
+    public function blog() {
+        $blogs = Blog::latest()->get();
+        return view('frontend.blog', compact('blogs'));
+    }
+
+
+    public function details($title, $blogId) {
+        $blog = Blog::findOrFail($blogId);
+        return view('frontend.blog-details', compact('blog'));
+    }
 }
