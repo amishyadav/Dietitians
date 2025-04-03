@@ -12,12 +12,12 @@
                 <div class="collapse navbar-collapse" id="main_nav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="{{ route('home') }}">
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html"> About Us </a>
+                            <a class="nav-link" href="{{ route('about-us') }}"> About Us </a>
                         </li>
 
                         <li class="nav-item dropdown">

@@ -25,4 +25,9 @@ class HomeController extends Controller
         $blog = Blog::findOrFail($blogId);
         return view('frontend.blog-details', compact('blog'));
     }
+
+    public function aboutUs() {
+
+        return view('frontend.about-us');
+    }
 }

@@ -50,7 +50,7 @@
                                     </div>
                                     <div class="blog-text">
                                         <p class="mb-0">
-                                            {!! $blog->description !!}
+                                            {!! Str::limit($blog->description, 250, '...') !!}
                                         </p>
                                     </div>
                                     <div class="red-more mt-30">

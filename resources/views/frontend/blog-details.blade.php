@@ -5,7 +5,7 @@
 @section('content')
         <!-- Start Breadcrumb
         ============================================= -->
-        <div class="site-breadcrumb">
+        <div class="site-breadcrumb mt-100">
             <div class="container">
                 <h2 class="breadcrumb-title">Blog Details</h2>
                 <ul class="breadcrumb-menu clearfix">

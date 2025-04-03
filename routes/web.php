@@ -24,6 +24,7 @@ Route::get('/', [HomeController::class,'home'])->name('home');
 Route::get('pricing-plans/redirect-to-whatsapp/{pricingPlan}',[PricingPlanController::class,'redirectToWhatsApp'])->name('pricing-plans.redirect-whatsapp');
 Route::get('blogs', [HomeController::class,'blog'])->name('blog');
 Route::get('blogs/{title}/{blog}',[HomeController::class,'details'])->name('blogs.details');
+Route::get('about-us', [HomeController::class,'aboutUs'])->name('about-us');
 
 // Backend Routes
 Route::group(['prefix'=>'admin','middleware' => ['web']], function () {
