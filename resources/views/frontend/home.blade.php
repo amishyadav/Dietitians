@@ -4,19 +4,106 @@
 @endsection
 @section('content')
     <main class="main">
-
         <!-- Start Slider
-        ============================================= -->
-        <div class="slider-container partner-wpr partner-sldr owl-carousel owl-theme">
-            <img src="{{asset('frontend/assets/img/slider/slider-1.jpg') }}" alt="thumb">
-            <img src="{{asset('frontend/assets/img/slider/slider-2.jpg') }}" alt="thumb">
-            <img src="{{asset('frontend/assets/img/slider/slider-10.jpg') }}" alt="thumb">
-            <img src="{{asset('frontend/assets/img/slider/slider-11.jpg') }}" alt="thumb">
-            <img src="{{asset('frontend/assets/img/slider/slider-12.jpg') }}" alt="thumb">
-            <img src="{{asset('frontend/assets/img/slider/slider-14.jpg') }}" alt="thumb">
+                ============================================= -->
+        <div id="home" class="hero-2-section bg pos-rel">
+            <div class="hero-2">
+{{--                <img src="{{asset('frontend/assets/img/bg/bg-gallery.png') }}" class="sec-pic-1" alt="thumb">--}}
+{{--                <img src="{{asset('frontend/assets/img/brush/b-1.png') }}" class="sec-pic-2" alt="thumb">--}}
+{{--                <img src="{{asset('frontend/assets/img/brush/b-2.png') }}" class="sec-pic-3" alt="thumb">--}}
+{{--                <img src="{{asset('frontend/assets/img/brush/b-3.png') }}" class="sec-pic-4" alt="thumb">--}}
+            </div>
+            <div class="hero-section-content hero-sldr owl-carousel owl-theme">
+                <div class="hero-2-single">
+                    <div class="container g-0">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="hero-2-content">
+                                    <div class="hero-2-desc">
+                                        <h2 class="hero-title">
+                                            Providing Tasty &amp; Healthy Food
+                                        </h2>
+                                        <p>
+                                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae  vel illum qui dolorem eum velit esse quam nihil consequatur qui in ea el
+                                        </p>
+                                        <div class="hero-btn">
+                                            <a href="contact.html" target="_blank" class="tm-btn-2">
+                                                Shop Now
+                                                <i class="icofont-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-7">
+                                <div class="hdr-2-pic">
+                                    <img src="{{asset('frontend/assets/img/header/hdr-1-bg.png') }}" alt="thumb">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-2-single">
+                    <div class="container g-0">
+                        <div class="row ">
+                            <div class="col-xl-5">
+                                <div class="hero-2-content">
+                                    <div class="hero-2-desc">
+                                        <h2 class="hero-title">
+                                            Organic And Healthy Food
+                                        </h2>
+                                        <p>
+                                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae  vel illum qui dolorem eum velit esse quam nihil consequatur qui in ea el
+                                        </p>
+                                        <div class="hero-btn">
+                                            <a href="contact.html" target="_blank" class="tm-btn-2">
+                                                Shop Now
+                                                <i class="icofont-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-7">
+                                <div class="hdr-2-pic">
+                                    <img src="{{asset('frontend/assets/img/header/hdr-2-bg.png') }}" alt="thumb">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-2-single">
+                    <div class="container g-0">
+                        <div class="row ">
+                            <div class="col-xl-5">
+                                <div class="hero-2-content">
+                                    <div class="hero-2-desc">
+                                        <h2 class="hero-title">
+                                            Organic And Healthy Food
+                                        </h2>
+                                        <p>
+                                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae  vel illum qui dolorem eum velit esse quam nihil consequatur qui in ea el
+                                        </p>
+                                        <div class="hero-btn">
+                                            <a href="contact.html" target="_blank" class="tm-btn-2">
+                                                Shop Now
+                                                <i class="icofont-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-7">
+                                <div class="hdr-2-pic">
+                                    <img src="{{asset('frontend/assets/img/header/hdr-3-bg.png') }}" alt="thumb">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End Slider -->
-
 
         <!-- Start About
         ============================================= -->
@@ -345,7 +432,7 @@
                     <div class="blog-box">
                         <div class="blog-pic">
                             @if ($blog->image)
-                                <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" width="300">
+                                <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" width="500">
                             @endif
                         </div>
                         <div class="blog-content">

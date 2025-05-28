@@ -1,11 +1,11 @@
 <footer>
     <div class="footer-shp">
-        <img src="{{asset('frontend/assets/img/about/cow.png') }}" alt="thumb">
+        <img src="{{asset('frontend/assets/img/footer/1.jpg') }}" alt="thumb">
     </div>
     <div class="footer-widget">
         <div class="container">
             <div class="footer-widget-wpr de-padding">
-                <div class="row g-5">
+                <div class="row g-5 ms-5">
                     <div class="col-xl-4 col-md-6">
                         <div class="footer-widget-box about-us">
                             <div class="footer-logo">
@@ -22,7 +22,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6">
+                    <div class="col-xl-2 col-md-6">
                         <div class="footer-widget-box list">
                             <h4 class="footer-widget-title">Quick Links</h4>
                             <ul class="footer-list">
@@ -88,9 +88,9 @@
         <div class="container">
             <div class="copyright-content">
                 <p class="mb-0">
-                    Copyright © 2021. All Rights Reserved
-                    <a href="https://themeforest.net/user/templatebucket/portfolio" target="_blank" class="temp-bucket">
-                        Templatebucket
+                    Copyright © 2025. All Rights Reserved
+                    <a href="#" target="_blank" class="temp-bucket">
+                        Arogyah
                     </a>.
                 </p>
             </div>

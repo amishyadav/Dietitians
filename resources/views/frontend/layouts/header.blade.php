@@ -1,31 +1,28 @@
-<header class="header header-1">
+<header class="header header-2">
     <div class="main-navigation">
-        <nav  class="navbar navbar-expand-lg fixed-top">
-            <div class="container order-menu g-0">
-                <a class="navbar-brand" href="../index-2.html">
-                    <img src="{{ asset('frontend/assets/img/logo/logo-white.png') }}" class="logo-display" alt="thumb">
-                    <img src="{{ asset('frontend/assets/img/logo/logo.png') }}" class="logo-scrolled" alt="thumb">
+        <nav id="navbar_top" class="navbar navbar-expand-lg">
+            <div class="container g-0">
+                <a class="navbar-brand" href="https://themekar.com/templatebucket/oreg/index.html">
+                    <img src="assets/img/logo/logo.png" class="logo-display" alt="thumb">
+                    <img src="assets/img/logo/logo.png" class="logo-scrolled" alt="thumb">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="ti-menu-alt"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="main_nav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="{{ route('home') }}">
-                                Home
-                            </a>
+                    <ul id="top-menu" class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link smooth-menu" href="{{ route('home') }}"> Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('about-us') }}"> About Us </a>
+                            <a class="nav-link smooth-menu" href="{{ route('about-us') }}"> About Us </a>
                         </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="{{route('blog')}}">
-                                Blog
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link smooth-menu" href="{{route('blog')}}"> Blogs </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html"> Contact </a></li>
+                        <li class="nav-item">
+                            <a class="nav-link smooth-menu" href="#contact"> Contact </a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                 My Account
@@ -42,7 +39,6 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
                     </ul>
                 </div> <!-- navbar-collapse.// -->
             </div> <!-- container -->
